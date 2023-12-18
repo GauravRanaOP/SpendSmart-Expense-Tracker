@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpendSmart</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/home.css" />
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .owner-info {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .owner-info img {
+            border-radius: 50%;
+            max-width: 100px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+          <div class="logo">
+            <a href="home.html"
+              ><input
+                type="button"
+                class="button-33"
+                id="signin"
+                name="signin"
+                value="Expense Tracker"
+            /></a>
+          </div>
+          <div class="search">
+            <input type="text" class="search-box" placeholder="search Progress" />
+            
+          </div>
+          <div class="nav-items">
+            <a href="#"><i class="fa fa-user fa-lg"></i></a>
+            <a href="#"><i class="fa fa-shopping-cart fa-lg"></i></a>
+          </div>
+  
+          <div class="logo">
+            <a href="signin.html"
+              ><input
+                type="button"
+                class="button-33"
+                id="signin"
+                name="signin"
+                value="Log Out"
+            /></a>
+          </div>
+        </nav>
+  
+        <div class="hamburger">
+          <div class="bar">
+            <!-- <div class="logo">
+              <img src="images/logo.png" alt=" Logo" />
+            </div> -->
+            <label class="menubtn" for="navBtn"><span></span></label>
+          </div>
+        </div>
+        <div class="hideMenu">
+          <input type="checkbox" class="navBtn" id="navBtn" />
+          <div class="sidebar">
+            <ul>
+              <li>
+                <a href="home.html">Home</a>
+              </li>
+              <li>
+                <a href="expense.html">Expense</a>
+              </li>
+              <li>
+                <a href="feedback.html">Feedback</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <ul class="links-container">
+          <li class="link-item"><a href="home.html" class="link">Home</a></li>
+          <li class="link-item">
+            <a href="expense.html" class="link">Expense</a>
+          </li>
+          <li class="link-item">
+            <a href="feedback.html" class="link">Feedback</a>
+          </li>
+          <li class="link-item">
+            <a href="contact.html" class="link">Contact Us</a>
+          </li>
+        </ul>
+      </header>
+
+      <main>
+<div class="owner-info">
+    <p>Keep track of hours, projects and payments.</p>
+    <p>An intuitive, lightweight solution for tracking hours and expenses that's easy to adopt and use daily.</p>
+</div>
+
+<div class="container">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+</div>
+
+<div class="owner-info">
+    <p>About the Owner</p>
+    <p>Narinder Singh</p>
+</div>
+
+<main>
+
+    <footer>
+        <div class="footer">
+          <div class="content">
+            <div class="column">
+              <div class="services">
+                <h4>Expense Tracker</h4>
+                <p><a href="#">Expense</a></p>
+                <p><a href="#">Saving</a></p>
+                <p><a href="#">Investments</a></p>
+                <p><a href="#">Consult Us</a></p>
+                <p><a href="#"></a></p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="links">
+                <h4>QUICK LINKS</h4>
+                <p><a href="#">My Account </a></p>
+                <p><a href="#">Track Your Progress </a></p>
+                <p><a href="#">Site Map</a></p>
+                <p><a href="#">Privacy Policy </a></p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="details">
+                <h4>EXPLORE</h4>
+                <p><a href="#">Home</a></p>
+                <p><a href="#">Feedback</a></p>
+                <p><a href="#">Expense</a></p>
+                <p><a href="#">Contact Us</a></p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="details">
+                <div class="footer-apps-image-content">
+                  <div class="footer-title">
+                    <h4 class="appTitle">EXPERIENCE OUR APP ON MOBILE</h4>
+                  </div>
+                  <div class="footer-apps">
+                    <div class="footer-apps-image">
+                      <a href="#">
+                        <img src="img/playstore.png" />
+                      </a>
+                    </div>
+                    <div class="footer-apps-image">
+                      <a href="#">
+                        <img src="img/applestore.png" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <section id="copy-right">
+            <div class="copy-right-sec">
+              Copyright 2023, Expense Tracker | Terms and Conditions
+            </div>
+          </section>
+        </div>
+      </footer>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+    // Using arrow functions for brevity
+
+    const submitForm = () => {
+        const name = $('#name').val();
+        const email = $('#email').val();
+        const message = $('#message').val();
+
+        if (name && email && message) {
+            alert(`Thank you, ${name}! Your message has been submitted.`);
+            // You can add an AJAX request here to send the form data to the server.
+        } else {
+            alert('Please fill in all the fields.');
+        }
+    };
+</script>
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SpendSmart</title>
+    <link rel="stylesheet" href="css/feedback.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="home.html"
+            ><input
+              type="button"
+              class="button-33"
+              id="signin"
+              name="signin"
+              value="Expense Tracker"
+          /></a>
+        </div>
+        <div class="search">
+          <input type="text" class="search-box" placeholder="search Progress" />
+          
+        </div>
+        <div class="nav-items">
+          <a href="#"><i class="fa fa-user fa-lg"></i></a>
+          <a href="#"><i class="fa fa-shopping-cart fa-lg"></i></a>
+        </div>
+
+        <div class="logo">
+          <a href="signin.html"
+            ><input
+              type="button"
+              class="button-33"
+              id="signin"
+              name="signin"
+              value="Log Out"
+          /></a>
+        </div>
+      </nav>
+
+      <div class="hamburger">
+        <div class="bar">
+          <!-- <div class="logo">
+            <img src="images/logo.png" alt=" Logo" />
+          </div> -->
+          <label class="menubtn" for="navBtn"><span></span></label>
+        </div>
+      </div>
+      <div class="hideMenu">
+        <input type="checkbox" class="navBtn" id="navBtn" />
+        <div class="sidebar">
+          <ul>
+            <li>
+              <a href="home.html">Home</a>
+            </li>
+            <li>
+              <a href="expense.html">Expense</a>
+            </li>
+            <li>
+              <a href="feedback.html">Feedback</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <ul class="links-container">
+        <li class="link-item"><a href="home.html" class="link">Home</a></li>
+        <li class="link-item">
+          <a href="expense.html" class="link">Expense</a>
+        </li>
+        <li class="link-item">
+          <a href="feedback.html" class="link">Feedback</a>
+        </li>
+        <li class="link-item">
+          <a href="contact.html" class="link">Contact Us</a>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <div class="mainContainer">
+        <h2>Feedback Form</h2>
+        <form id="feedbackForm">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="content">
+          <div class="column">
+            <div class="services">
+              <h4>Expense Tracker</h4>
+              <p><a href="#">Expense</a></p>
+              <p><a href="#">Saving</a></p>
+              <p><a href="#">Investments</a></p>
+              <p><a href="#">Consult Us</a></p>
+              <p><a href="#"></a></p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="links">
+              <h4>QUICK LINKS</h4>
+              <p><a href="#">My Account </a></p>
+              <p><a href="#">Track Your Progress </a></p>
+              <p><a href="#">Site Map</a></p>
+              <p><a href="#">Privacy Policy </a></p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="details">
+              <h4>EXPLORE</h4>
+              <p><a href="#">Home</a></p>
+              <p><a href="#">Feedback</a></p>
+              <p><a href="#">Expense</a></p>
+              <p><a href="#">Contact Us</a></p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="details">
+              <div class="footer-apps-image-content">
+                <div class="footer-title">
+                  <h4 class="appTitle">EXPERIENCE OUR APP ON MOBILE</h4>
+                </div>
+                <div class="footer-apps">
+                  <div class="footer-apps-image">
+                    <a href="#">
+                      <img src="img/playstore.png" />
+                    </a>
+                  </div>
+                  <div class="footer-apps-image">
+                    <a href="#">
+                      <img src="img/applestore.png" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section id="copy-right">
+          <div class="copy-right-sec">
+            Copyright 2023, Expense Tracker | Terms and Conditions
+          </div>
+        </section>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="js/feedback.js"></script>
+  </body>
+  <link rel="stylesheet" href="css/feedback.css" />
+</html>

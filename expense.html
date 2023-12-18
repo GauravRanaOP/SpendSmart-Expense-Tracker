@@ -1,0 +1,245 @@
+<!-- index.html-->
+
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+	<meta charset="UTF-8" /> 
+	<meta name="viewport"
+		content="width=device-width, 
+				initial-scale=1.0" /> 
+	<link rel="stylesheet"
+		href="css/expense.css" /> 
+		<link rel="stylesheet" href="css/home.css" />
+		<link rel="stylesheet" href="css/style.css" />
+
+	<title>SpendSmart</title> 
+</head> 
+
+<body> 
+	<header>
+		<nav class="navbar">
+		  <div class="logo">
+			<a href="home.html"
+			  ><input
+				type="button"
+				class="button-33"
+				id="signin"
+				name="signin"
+				value="Expense Tracker"
+			/></a>
+		  </div>
+		  <div class="search">
+			<input type="text" class="search-box" placeholder="search Progress" />
+			
+		  </div>
+		  <div class="nav-items">
+			<a href="#"><i class="fa fa-user fa-lg"></i></a>
+			<a href="#"><i class="fa fa-shopping-cart fa-lg"></i></a>
+		  </div>
+  
+		  <div class="logo">
+			<a href="signin.html"
+			  ><input
+				type="button"
+				class="button-33"
+				id="signin"
+				name="signin"
+				value="Log Out"
+			/></a>
+		  </div>
+		</nav>
+  
+		<div class="hamburger">
+		  <div class="bar">
+			<!-- <div class="logo">
+			  <img src="images/logo.png" alt=" Logo" />
+			</div> -->
+			<label class="menubtn" for="navBtn"><span></span></label>
+		  </div>
+		</div>
+		<div class="hideMenu">
+		  <input type="checkbox" class="navBtn" id="navBtn" />
+		  <div class="sidebar">
+			<ul>
+			  <li>
+				<a href="home.html">Home</a>
+			  </li>
+			  <li>
+				<a href="expense.html">Expense</a>
+			  </li>
+			  <li>
+				<a href="feedback.html">Feedback</a>
+			  </li>
+			  <li>
+				<a href="contact.html">Contact Us</a>
+			  </li>
+			</ul>
+		  </div>
+		</div>
+		<ul class="links-container">
+		  <li class="link-item"><a href="home.html" class="link">Home</a></li>
+		  <li class="link-item">
+			<a href="expense.html" class="link">Expense</a>
+		  </li>
+		  <li class="link-item">
+			<a href="feedback.html" class="link">Feedback</a>
+		  </li>
+		  <li class="link-item">
+			<a href="contact.html" class="link">Contact Us</a>
+		  </li>
+		</ul>
+	  </header>
+
+	  <main>
+	<div> 
+		<h1 style="color: green;"> 
+		</h1> 
+		<h3>Expense Tracker Using JavaScript</h3> 
+	</div> 
+	<div class="summary"> 
+		<div> 
+			<h1> Balance: 
+				<span id="updatedBal"> 
+					7000 
+				</span> 
+			</h1> 
+		</div> 
+		<br /> 
+		<div class="total"> 
+			<div> 
+				Total Income: 
+				<div> 
+					<h2 style="color: green;"
+						id="updatedInc"> 
+						25000 
+					</h2> 
+				</div> 
+			</div> 
+			<hr class="verticle" /> 
+			<div> 
+				Total Expenses: 
+				<div> 
+					<h2 style="color: red;"
+						id="updatedExp"> 
+						18000 
+					</h2> 
+				</div> 
+			</div> 
+		</div> 
+	</div> 
+	<div class="root"> 
+		<div id="items"> 
+			<h2>Expenses</h2> 
+			<table id="table"> 
+				<tr class="titles"> 
+					<th>S.no.</th> 
+					<th>Name</th> 
+					<th>Amount</th> 
+					<th>Type</th> 
+					<th>Delete</th> 
+				</tr> 
+			</table> 
+		</div> 
+		<hr class="vertical" /> 
+		<div id="new"> 
+			<h2>Add new</h2> 
+
+			<div class="inputs"> 
+				<div class="inputitem"> 
+					<p style="width: 9rem"> 
+						Entry type: 
+					</p> 
+					<select id='itemType'> 
+						<option value="0">Expense</option> 
+						<option value="1">Income</option> 
+					</select> 
+				</div> 
+				<div class="inputitem"> 
+					<p style="width: 9rem">Name:</p> 
+					<input id="name"
+						type="text"
+						value=""
+						placeholder="name" /> 
+				</div> 
+				<div class="inputitem"> 
+					<p style="width: 9rem">Amount:</p> 
+					<input value="0"
+						id="amount"
+						name="mod"
+						type="number"
+						placeholder="amount" /> 
+				</div> 
+			</div> 
+			<button onclick="addItem()"> 
+				Add Expense 
+			</button> 
+		</div> 
+	</div> 
+	<main>
+
+		<footer>
+			<div class="footer">
+			  <div class="content">
+				<div class="column">
+				  <div class="services">
+					<h4>Expense Tracker</h4>
+					<p><a href="#">Expense</a></p>
+					<p><a href="#">Saving</a></p>
+					<p><a href="#">Investments</a></p>
+					<p><a href="#">Consult Us</a></p>
+					<p><a href="#"></a></p>
+				  </div>
+				</div>
+				<div class="column">
+				  <div class="links">
+					<h4>QUICK LINKS</h4>
+					<p><a href="#">My Account </a></p>
+					<p><a href="#">Track Your Progress </a></p>
+					<p><a href="#">Site Map</a></p>
+					<p><a href="#">Privacy Policy </a></p>
+				  </div>
+				</div>
+				<div class="column">
+				  <div class="details">
+					<h4>EXPLORE</h4>
+					<p><a href="#">Home</a></p>
+					<p><a href="#">Feedback</a></p>
+					<p><a href="#">Expense</a></p>
+					<p><a href="#">Contact Us</a></p>
+				  </div>
+				</div>
+				<div class="column">
+				  <div class="details">
+					<div class="footer-apps-image-content">
+					  <div class="footer-title">
+						<h4 class="appTitle">EXPERIENCE OUR APP ON MOBILE</h4>
+					  </div>
+					  <div class="footer-apps">
+						<div class="footer-apps-image">
+						  <a href="#">
+							<img src="img/playstore.png" />
+						  </a>
+						</div>
+						<div class="footer-apps-image">
+						  <a href="#">
+							<img src="img/applestore.png" />
+						  </a>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+	  
+			  <section id="copy-right">
+				<div class="copy-right-sec">
+				  Copyright 2023, Expense Tracker | Terms and Conditions
+				</div>
+			  </section>
+			</div>
+		  </footer>
+	<script src="js/expense.js"></script> 
+</body> 
+
+</html>
